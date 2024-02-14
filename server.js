@@ -86,7 +86,7 @@ job.start();
 
 // Define the route handler for the root route ("/")
 app.get('/', (req, res) => {
-  res.send('Hello, World!'); // Send a response to the client
+  res.send('The backend is live!'); // Send a response to the client
 });
 
 // Start the Express.js server
