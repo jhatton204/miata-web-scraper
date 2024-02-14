@@ -1,5 +1,7 @@
-const puppeteer = require('puppeteer');
+const express = require('express');
+const app = express();
 const cron = require('cron');
+const puppeteer = require('puppeteer');
 const { MongoClient } = require('mongodb');
 
 // MongoDB connection URI
@@ -81,3 +83,9 @@ const job = new cron.CronJob(interval, async () => {
 
 // Start the cron job
 job.start();
+
+// Start the Express.js server
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
+});
