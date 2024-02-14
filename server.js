@@ -11,7 +11,7 @@ const collectionName = 'miataPrices';
 
 // URL of the Facebook Marketplace page for Mazda Miata listings
 const URL = 'https://www.facebook.com/marketplace/104039339632793/search/?query=miata';
-const interval = '*/5 * * * * *'; // Every 5 seconds
+const interval = '0 */12 * * *'; // Every 12 hours
 
 // Function to store the scraped data in MongoDB
 async function storeDataInDB(data) {
