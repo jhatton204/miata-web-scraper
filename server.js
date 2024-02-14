@@ -84,6 +84,11 @@ const job = new cron.CronJob(interval, async () => {
 // Start the cron job
 job.start();
 
+// Define the route handler for the root route ("/")
+app.get('/', (req, res) => {
+  res.send('Hello, World!'); // Send a response to the client
+});
+
 // Start the Express.js server
 const PORT = process.env.PORT || 10000;
 const HOST = '0.0.0.0';
