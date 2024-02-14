@@ -22,6 +22,7 @@ The Miata Web Scraper is a powerful web scraping tool designed to extract pricin
 - [Puppeteer](https://github.com/puppeteer/puppeteer): Headless Chrome Node.js API for browser automation.
 - [MongoDB](https://www.mongodb.com/): A NoSQL database for storing the scraped data.
 - [Cron](https://github.com/kelektiv/node-cron): A tool for scheduling tasks in Node.js.
+- [Express](https://expressjs.com/): Web application framework for Node.js, used for creating APIs and handling HTTP requests.
 
 ## API
 
